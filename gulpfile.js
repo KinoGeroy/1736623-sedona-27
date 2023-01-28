@@ -1,6 +1,5 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
-import sass from 'gulp-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
@@ -12,9 +11,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import {deleteAsync} from 'del';
 import browser from 'browser-sync';
-import gulpSass from 'gulp-sass';
 import sass from 'gulp-dart-sass';
-const sass = gulpSass(dartSass);
 
 // Styles
 
