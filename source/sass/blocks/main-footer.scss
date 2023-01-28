@@ -11,8 +11,18 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
-  padding: 33px 77px 23px 77px;
+  padding: 39px 77px 23px 77px;
   justify-content: center;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 39px 45px 30px 60px;
+    max-height: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 39px 142px 30px 119px;
+  }
 }
 
 .social-info__tag {
@@ -23,7 +33,7 @@
 }
 
 .footer-tag {
-  font-size: 20px;
+  font-size: 21px;
   line-height: 26px;
   margin-bottom: 33px;
 
@@ -54,7 +64,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 13px;
+  font-size: 14px;
 
   &:hover {
     color: #81b3d2;
@@ -127,12 +137,5 @@
   .social-info {
     flex-direction: row;
     justify-content: space-between;
-    padding: 29px 76px 29px 59px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .social-info {
-    padding: 36px 175px 36px 104px;
   }
 }
